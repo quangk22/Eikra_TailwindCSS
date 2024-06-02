@@ -22,8 +22,10 @@
   </head>
   <body class="font-sans">
     <!-- =========================== HEADER =========================== -->
-    <header class="z-50 w-full bg-white">
-      <div class="bg-[#002147]">
+    <header
+      class="z-50 w-full bg-white fixed top-0 contaider-header "
+    >
+      <div class="bg-[#002147] header1">
         <div class="max-w-[1410px] m-auto w-[97%] items-center">
           <div class="pt-4 pb-4 li flex text-sm justify-between">
             <div class="text-gray-300">
@@ -84,462 +86,472 @@
         </div>
       </div>
 
-      <div class="max-w-[1410px] m-auto w-[97%] flex items-center">
-        <div class="flex items-center w-auto">
-          <div class="mr-5"><img src="./image/logo-dark.png" alt="" /></div>
+      <div class="header2">
+        <div class="max-w-[1410px] m-auto w-[97%] flex items-center">
+          <div class="flex items-center w-auto">
+            <div class="mr-5"><img src="./image/logo-dark.png" alt="" /></div>
 
-          <div class="flex relative group group mr-2">
-            <input
-              type="text"
-              placeholder="Search..."
-              class="bg-gray-100 px-1 py-0 rounded-md min-w-[300px] w-full h-14 ml-15 border border-gray-100 transition duration-400 group-hover:border-yellow-500 focus:border-yellow-500 focus:outline-none"
-            />
-            <button
-              class="absolute text-yellow-500 font-extrabold right-3 top-1/2 -translate-y-1/2 hover:text-black"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
+            <div class="flex relative group group mr-2">
+              <input
+                type="text"
+                placeholder="Search..."
+                class="bg-gray-100 px-1 py-0 rounded-md min-w-[300px] w-full h-14 ml-15 border border-gray-100 transition duration-400 group-hover:border-yellow-500 focus:border-yellow-500 focus:outline-none"
+              />
+              <button
+                class="absolute text-yellow-500 font-extrabold right-3 top-1/2 -translate-y-1/2 hover:text-black"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
 
-          <div class="py-8 px-2 relative group">
-            <div
-              class="flex items-center required group hover:text-yellow-500 cursor-pointer after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:scale-0 after:group-hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
-            >
-              <img src="./image/grid.svg" alt="" class="text-gray-200 mr-3" />
-              <div class="flex items-center">
-                <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                  >Category</span
-                >
-                <i
-                  class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                ></i>
+            <div class="py-8 px-2 relative group">
+              <div
+                class="flex items-center required group hover:text-yellow-500 cursor-pointer after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:scale-0 after:group-hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
+                <img src="./image/grid.svg" alt="" class="text-gray-200 mr-3" />
+                <div class="flex items-center">
+                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    >Category</span
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                  ></i>
+                </div>
+              </div>
+
+              <div
+                class="absolute z-40 left-0 top-full -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[210px] invisible group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+              >
+                <ul class="text-white cursor-pointer">
+                  <li
+                    class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                  >
+                    KIDS
+                  </li>
+                  <li
+                    class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                  >
+                    WEB DEVELOPMENT
+                  </li>
+                  <li
+                    class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                  >
+                    PROGRAMMING
+                  </li>
+                  <li class="py-2 px-5 hover:bg-[#1A3B61]">TECHNOLOGY</li>
+                </ul>
               </div>
             </div>
 
-            <div
-              class="absolute z-40 left-0 top-full -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[210px] invisible group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
-            >
-              <ul class="text-white cursor-pointer">
+            <span class="text-[#6c7d92] mx-[1px] h-full py-8">|</span>
+          </div>
+
+          <div class="flex justify-between items-center w-[58%]">
+            <div class="">
+              <ul class="flex gap-1">
                 <li
-                  class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0"
                 >
-                  KIDS
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >Home</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[440px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul class="text-white cursor-pointer pl-1 w-full">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 1
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 2
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 3
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 4
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 5
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 6
+                        </li>
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">HOME 7</li>
+                      </ul>
+                      <ul class="text-white cursor-pointer pr-1 w-full">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 1 (ONEPAGE)
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 2 (ONEPAGE)
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 3 (ONEPAGE)
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 4 (ONEPAGE)
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 5 (ONEPAGE)
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          HOME 6 (ONEPAGE)
+                        </li>
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">
+                          HOME 7 (ONEPAGE)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
+
                 <li
-                  class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  WEB DEVELOPMENT
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >Pages</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[660px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul
+                        class="text-white cursor-pointer pl-1 w-full uppercase"
+                      >
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          About Us 1
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          About Us 2
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          About Us 3
+                        </li>
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">About Us 4</li>
+                      </ul>
+                      <ul
+                        class="text-white cursor-pointer pr-1 w-full uppercase"
+                      >
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          events
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Single Event
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          shops
+                        </li>
+
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">
+                          Single Product
+                        </li>
+                      </ul>
+                      <ul
+                        class="text-white cursor-pointer pr-1 w-full uppercase"
+                      >
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Instructors 1
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Instructors 2
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Instructor Details
+                        </li>
+
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">404 Error</li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
+
                 <li
-                  class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  PROGRAMMING
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >Element</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul class="text-white cursor-pointer w-full uppercase">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Miscellaneous
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Info Box
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Post
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Course
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Instructors
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Research
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Events
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Event Countdown
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Pricing Table
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Testimonials
+                        </li>
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">Counter</li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
-                <li class="py-2 px-5 hover:bg-[#1A3B61]">TECHNOLOGY</li>
+
+                <li
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                >
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >Courses</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul class="text-white cursor-pointer w-full uppercase">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Courses
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Single Course
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Instructor Profile
+                        </li>
+
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">Login</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                >
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >Reasearch</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul class="text-white cursor-pointer w-full uppercase">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Research 1
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Research 2
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Research 3
+                        </li>
+
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">
+                          Research Details
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                >
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >News</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul class="text-white cursor-pointer w-full uppercase">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          News 1
+                        </li>
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          News 2
+                        </li>
+
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">
+                          News Details
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                >
+                  <div class="">
+                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                      >Contact</span
+                    >
+                    <i
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                    ></i>
+                  </div>
+
+                  <div
+                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                  >
+                    <div class="flex gap-2">
+                      <ul class="text-white cursor-pointer w-full uppercase">
+                        <li
+                          class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
+                        >
+                          Contact 1
+                        </li>
+                        <li class="py-2 px-5 hover:bg-[#1A3B61]">Contact 2</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
-          </div>
 
-          <span class="text-[#6c7d92] mx-[1px] h-full py-8">|</span>
-        </div>
-
-        <div class="flex justify-between items-center w-[58%]">
-          <div class="">
-            <ul class="flex gap-1">
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0"
+            <div class="ml-auto relative py-7 px-2 group">
+              <div
+                class="before:content-['0'] before:text-center before:items-center before:flex before:justify-center before:text-xs before:font-semibold before:absolute before:top-6 before:right-0 before:w-5 before:h-5 before:bg-yellow-400 before:text-black before:rounded-full"
               >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >Home</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
+                <img src="./image/cart.svg" alt="" class="" />
+              </div>
 
-                <div
-                  class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[440px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer pl-1 w-full">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 1
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 2
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 3
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 4
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 5
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 6
-                      </li>
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">HOME 7</li>
-                    </ul>
-                    <ul class="text-white cursor-pointer pr-1 w-full">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 1 (ONEPAGE)
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 2 (ONEPAGE)
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 3 (ONEPAGE)
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 4 (ONEPAGE)
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 5 (ONEPAGE)
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        HOME 6 (ONEPAGE)
-                      </li>
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">
-                        HOME 7 (ONEPAGE)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              <div
+                class="bg-white absolute top-full z-40 w-[270px] py-4 px-3 right-0 cursor-auto shadow-md transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
               >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >Pages</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
-
-                <div
-                  class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[660px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer pl-1 w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        About Us 1
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        About Us 2
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        About Us 3
-                      </li>
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">About Us 4</li>
-                    </ul>
-                    <ul class="text-white cursor-pointer pr-1 w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        events
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Single Event
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        shops
-                      </li>
-
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">
-                        Single Product
-                      </li>
-                    </ul>
-                    <ul class="text-white cursor-pointer pr-1 w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Instructors 1
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Instructors 2
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Instructor Details
-                      </li>
-
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">404 Error</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
-              >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >Element</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
-
-                <div
-                  class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Miscellaneous
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Info Box
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Post
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Course
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Instructors
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Research
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Events
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Event Countdown
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Pricing Table
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Testimonials
-                      </li>
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">Counter</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
-              >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >Courses</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
-
-                <div
-                  class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Courses
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Single Course
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Instructor Profile
-                      </li>
-
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">Login</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
-              >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >Reasearch</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
-
-                <div
-                  class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Research 1
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Research 2
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Research 3
-                      </li>
-
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">
-                        Research Details
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
-              >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >News</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
-
-                <div
-                  class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        News 1
-                      </li>
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        News 2
-                      </li>
-
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">News Details</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li
-                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
-              >
-                <div class="">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
-                    >Contact</span
-                  >
-                  <i
-                    class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
-                  ></i>
-                </div>
-
-                <div
-                  class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
-                >
-                  <div class="flex gap-2">
-                    <ul class="text-white cursor-pointer w-full uppercase">
-                      <li
-                        class="py-2 px-5 border-b border-white border-opacity-20 hover:bg-[#1A3B61]"
-                      >
-                        Contact 1
-                      </li>
-                      <li class="py-2 px-5 hover:bg-[#1A3B61]">Contact 2</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="ml-auto relative py-7 px-2 group">
-            <div
-              class="before:content-['0'] before:text-center before:items-center before:flex before:justify-center before:text-xs before:font-semibold before:absolute before:top-6 before:right-0 before:w-5 before:h-5 before:bg-yellow-400 before:text-black before:rounded-full"
-            >
-              <img src="./image/cart.svg" alt="" class="" />
-            </div>
-
-            <div
-              class="bg-white absolute top-full z-40 w-[270px] py-4 px-3 right-0 cursor-auto shadow-md transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
-            >
-              <span>No products in the cart.</span>
+                <span>No products in the cart.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -547,7 +559,7 @@
     </header>
 
     <!-- =========================== BANNER =========================== -->
-    <div class="h-[700px] relative">
+    <div class="h-[700px] relative mt-32">
       <div class="swiper mySwiper w-full h-full">
         <div class="swiper-wrapper">
           <div class="swiper-slide relative">
@@ -1880,6 +1892,7 @@
     <!-- =========================== END FOOTER =========================== -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
