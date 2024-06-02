@@ -37,12 +37,16 @@
                 <span class="pl-3 pr-3 text-[#6c7d92]">|</span>
                 <li>
                   <i class="fa-regular fa-envelope text-yellow-500"></i>
-                  <span class="ml-2">info@example.com </span>
+                  <span class="ml-2 hover:underline cursor-pointer"
+                    >info@example.com
+                  </span>
                 </li>
                 <span class="pl-3 pr-3 text-[#6c7d92]">|</span>
                 <li>
                   <i class="fa-solid fa-phone text-yellow-500"></i>
-                  <span class="ml-2">+61383766284</span>
+                  <span class="ml-2 hover:underline cursor-pointer"
+                    >+61383766284</span
+                  >
                 </li>
               </ul>
             </div>
@@ -51,33 +55,32 @@
               <div class="">
                 <a href="#"><i class="fa-solid fa-user text-yellow-500"></i></a>
                 <span
-                  class="text-gray-300 ml-2 font-semibold hover:focus:border-yellow-500 cursor-pointer"
+                  class="text-gray-300 ml-2 font-semibold hover:text-yellow-500 cursor-pointer"
                   >Login/Register</span
                 >
               </div>
               <span class="pl-3 pr-3 text-[#6c7d92]">|</span>
               <div class="">
                 <ul class="flex text-gray-300 gap-5">
-                  <li class="hover:focus:border-yellow-500">
+                  <li class="hover:text-yellow-500">
                     <i class="fa-brands fa-facebook-f"></i>
                   </li>
-                  <li class="hover:focus:border-yellow-500">
+                  <li class="hover:text-yellow-500">
                     <i class="fa-brands fa-twitter"></i>
                   </li>
-                  <li class="hover:focus:border-yellow-500">
+                  <li class="hover:text-yellow-500">
                     <i class="fa-brands fa-google-plus-g"></i>
                   </li>
-                  <li class="hover:focus:border-yellow-500">
+                  <li class="hover:text-yellow-500">
                     <i class="fa-brands fa-youtube"></i>
                   </li>
-                  <li class="hover:focus:border-yellow-500">
+                  <li class="hover:text-yellow-500">
                     <i class="fas fa-rss"></i>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class=""></div>
         </div>
       </div>
 
@@ -85,13 +88,11 @@
         <div class="flex items-center w-auto">
           <div class="mr-5"><img src="./image/logo-dark.png" alt="" /></div>
 
-          <div
-            class="flex relative group hover:focus:border-yellow-500 group mr-2"
-          >
+          <div class="flex relative group group mr-2">
             <input
               type="text"
               placeholder="Search..."
-              class="bg-gray-100 px-1 py-0 rounded-md min-w-[300px] w-full h-14 ml-15 border border-gray-100 transition duration-400 group-hover:focus:border-yellow-500 focus:border-yellow-500 focus:outline-none"
+              class="bg-gray-100 px-1 py-0 rounded-md min-w-[300px] w-full h-14 ml-15 border border-gray-100 transition duration-400 group-hover:border-yellow-500 focus:border-yellow-500 focus:outline-none"
             />
             <button
               class="absolute text-yellow-500 font-extrabold right-3 top-1/2 -translate-y-1/2 hover:text-black"
@@ -102,7 +103,7 @@
 
           <div class="py-8 px-2 relative group">
             <div
-              class="flex items-center group hover:text-yellow-500 cursor-pointer"
+              class="flex items-center required group hover:text-yellow-500 cursor-pointer after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:scale-0 after:group-hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
             >
               <img src="./image/grid.svg" alt="" class="text-gray-200 mr-3" />
               <div class="flex items-center">
@@ -139,13 +140,15 @@
             </div>
           </div>
 
-          <span class="text-[#6c7d92]">|</span>
+          <span class="text-[#6c7d92] mx-[1px] h-full py-8">|</span>
         </div>
 
         <div class="flex justify-between items-center w-[58%]">
           <div class="">
             <ul class="flex gap-1">
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >Home</span
@@ -231,7 +234,9 @@
                 </div>
               </li>
 
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >Pages</span
@@ -307,7 +312,9 @@
                 </div>
               </li>
 
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >Element</span
@@ -378,7 +385,9 @@
                 </div>
               </li>
 
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >Courses</span
@@ -415,7 +424,9 @@
                 </div>
               </li>
 
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >Reasearch</span
@@ -454,7 +465,9 @@
                 </div>
               </li>
 
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >News</span
@@ -486,7 +499,9 @@
                 </div>
               </li>
 
-              <li class="group cursor-pointer py-8 px-2 relative group">
+              <li
+                class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+              >
                 <div class="">
                   <span class="mr-2 font-semibold group-hover:text-yellow-500"
                     >Contact</span
@@ -530,6 +545,7 @@
         </div>
       </div>
     </header>
+
     <!-- =========================== BANNER =========================== -->
     <div class="h-[700px] relative">
       <div class="swiper mySwiper w-full h-full">
@@ -1602,23 +1618,261 @@
     <footer>
       <div class="bg-[#002147]">
         <div class="pt-20 pb-[50px]">
-          <div class="max-w-[1140px] m-auto text-white grid grid-cols-4">
-            <div class="">
-              <h3 class="font-bold text-[22px]">Company</h3>
+          <div
+            class="max-w-[1140px] m-auto text-white grid grid-cols-4 pb-[80px]"
+          >
+            <div class="px-3">
+              <h3
+                class="font-bold text-[22px] pb-[18px] mb-[25px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-1 after:bg-yellow-500"
+              >
+                Company
+              </h3>
               <div class="">
-                <ul>
-                  <li>About</li>
-                  <li>Pricing</li>
-                  <li>News</li>
-                  <li>Careers</li>
-                  <li>Contact</li>
-                  <li>Events</li>
+                <ul class="font-normal">
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">About</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Pricing</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">News</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Careers</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Contact</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Events</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+
+            <div class="px-3">
+              <h3
+                class="font-bold text-[22px] pb-[18px] mb-[25px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-1 after:bg-yellow-500"
+              >
+                Explore Courses
+              </h3>
+              <div class="">
+                <ul class="font-normal">
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Courses</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Course Two</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Single Course</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Profile</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">Login/Register</a>
+                  </li>
+                  <li
+                    class="mb-[5px] pb-[5px] flex group hover:text-yellow-400"
+                  >
+                    <div
+                      class="mr-2 hidden group-hover:block transform transition-all delay-150 ease-in-out duration-300"
+                    >
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <a href="" class="">My account</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="px-3">
+              <h3
+                class="font-bold text-[22px] pb-[18px] mb-[25px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-1 after:bg-yellow-500"
+              >
+                Contacts
+              </h3>
+              <div class="pr-[35px]">
+                <ul>
+                  <li class="block border-b-[1px] border-[#1d3c60] mb-[17px]">
+                    <div class="flex items-center">
+                      <i class="fa-solid fa-location-dot mr-3"></i>
+                      <span> Location :</span>
+                    </div>
+                    <div class="mt-1 mb-[17px]">59 Street, Newyork City</div>
+                  </li>
+                  <li class="block border-b-[1px] border-[#1d3c60] mb-[17px]">
+                    <div class="flex items-center">
+                      <i class="fa-solid fa-phone mr-3"></i>
+
+                      <span> Call Us :</span>
+                    </div>
+                    <div
+                      class="mt-1 mb-[17px] hover:text-yellow-400 cursor-pointer font-semibold"
+                    >
+                      +2123 5900036
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex items-center">
+                      <i class="fa-solid fa-envelope mr-3"></i>
+
+                      <span> Mail Us:</span>
+                    </div>
+                    <div
+                      class="mt-1 mb-[17px] hover:text-yellow-400 cursor-pointer font-semibold"
+                    >
+                      info@gmail.com
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="px-3">
+              <h3
+                class="font-bold text-[22px] pb-[18px] mb-[25px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-1 after:bg-yellow-500"
+              >
+                Newsletter
+              </h3>
+              <div class="text-[15px]">
+                <p class="mb-5">
+                  Fusce varittus, dolor tempor interdum tristiquei bibendum
+                </p>
+
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  class="mb-[10px] border-[1px] border-[#354c66] bg-[#002147] min-h-[47px] w-full text-sm rounded focus:border-yellow-500 focus:outline-none pl-5 hover:border-yellow-500"
+                />
+
+                <input
+                  type="submit"
+                  value="Subscribe Now"
+                  class="bg-yellow-400 min-h-[47px] px-[30px] rounded text-black text-base font-semibold hover:bg-yellow-500"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div
+              class="relative w-full before:content-[''] before:absolute before:w-[197.5vw] before:bg-[#273a50] before:h-[1px] before:top-1/2 before:-translate-x-1/2"
+            >
+              <ul class="flex w-full text-gray-300 gap-5 justify-center">
+                <li
+                  class="w-[42px] h-[42px] bg-[#002147] flex justify-center items-center text-center rounded-full border border-[#273a50] hover:bg-yellow-500 hover:text-black z-10"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li
+                  class="w-[42px] h-[42px] bg-[#002147] flex justify-center items-center text-center rounded-full border border-[#273a50] hover:bg-yellow-500 hover:text-black z-10"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li
+                  class="w-[42px] h-[42px] bg-[#002147] flex justify-center items-center text-center rounded-full border border-[#273a50] hover:bg-yellow-500 hover:text-black z-10"
+                >
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </li>
+                <li
+                  class="w-[42px] h-[42px] bg-[#002147] flex justify-center items-center text-center rounded-full border border-[#273a50] hover:bg-yellow-500 hover:text-black z-10"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+                <li
+                  class="w-[42px] h-[42px] bg-[#002147] flex justify-center items-center text-center rounded-full border border-[#273a50] hover:bg-yellow-500 hover:text-black z-10"
+                >
+                  <i class="fas fa-rss"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between max-w-[1140px] m-auto mt-5">
+            <img src="./image/logo-light.png" alt="" />
+            <div class="text-[#909da4]">
+              © Copyright Eikra 2020. Designed and Developed by RadiusTheme
+            </div>
           </div>
         </div>
       </div>
