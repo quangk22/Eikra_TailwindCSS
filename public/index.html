@@ -22,11 +22,9 @@
   </head>
   <body class="font-sans">
     <!-- =========================== HEADER =========================== -->
-    <header
-      class="z-50 w-full bg-white fixed top-0 contaider-header "
-    >
-      <div class="bg-[#002147] header1">
-        <div class="max-w-[1410px] m-auto w-[97%] items-center">
+    <header class="z-50 w-full bg-white fixed top-0 contaider-header">
+      <div class="bg-[#002147] header1 max-lg:hidden">
+        <div class="px-14 m-auto w-full items-center">
           <div class="pt-4 pb-4 li flex text-sm justify-between">
             <div class="text-gray-300">
               <ul class="flex font-semibold">
@@ -87,11 +85,13 @@
       </div>
 
       <div class="header2">
-        <div class="max-w-[1410px] m-auto w-[97%] flex items-center">
-          <div class="flex items-center w-auto">
+        <div class="px-14 w-full flex items-center">
+          <div class="flex items-center">
             <div class="mr-5"><img src="./image/logo-dark.png" alt="" /></div>
 
-            <div class="flex relative group group mr-2">
+            <div
+              class="flex relative group group mr-2 max-[1350px]:hidden max-lg:hidden"
+            >
               <input
                 type="text"
                 placeholder="Search..."
@@ -104,13 +104,20 @@
               </button>
             </div>
 
-            <div class="py-8 px-2 relative group">
+            <div
+              class="py-8 px-2 relative group max-lg:px-1 max-lg:text-sm max-lg:hidden"
+            >
               <div
                 class="flex items-center required group hover:text-yellow-500 cursor-pointer after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:scale-0 after:group-hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
               >
-                <img src="./image/grid.svg" alt="" class="text-gray-200 mr-3" />
+                <img
+                  src="./image/grid.svg"
+                  alt=""
+                  class="text-gray-200 mr-3 max-xl:w-6"
+                />
                 <div class="flex items-center">
-                  <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                  <span
+                    class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                     >Category</span
                   >
                   <i
@@ -143,17 +150,20 @@
               </div>
             </div>
 
-            <span class="text-[#6c7d92] mx-[1px] h-full py-8">|</span>
+            <span class="text-[#6c7d92] mx-[1px] h-full py-8 max-lg:hidden"
+              >|</span
+            >
           </div>
 
-          <div class="flex justify-between items-center w-[58%]">
+          <div class="flex justify-between items-center max-lg:hidden">
             <div class="">
               <ul class="flex gap-1">
                 <li
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Home</span
                     >
                     <i
@@ -241,7 +251,8 @@
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Pages</span
                     >
                     <i
@@ -325,7 +336,8 @@
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Element</span
                     >
                     <i
@@ -398,7 +410,8 @@
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Courses</span
                     >
                     <i
@@ -437,7 +450,8 @@
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Reasearch</span
                     >
                     <i
@@ -478,7 +492,8 @@
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >News</span
                     >
                     <i
@@ -514,7 +529,8 @@
                   class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
                   <div class="">
-                    <span class="mr-2 font-semibold group-hover:text-yellow-500"
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Contact</span
                     >
                     <i
@@ -539,8 +555,14 @@
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="ml-auto relative py-7 px-2 group">
+          <div class="ml-auto flex justify-center items-center text-center">
+            <div class="text-2xl mr-3 hidden max-lg:block font-light">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="relative py-7 px-2 group">
               <div
                 class="before:content-['0'] before:text-center before:items-center before:flex before:justify-center before:text-xs before:font-semibold before:absolute before:top-6 before:right-0 before:w-5 before:h-5 before:bg-yellow-400 before:text-black before:rounded-full"
               >
@@ -553,78 +575,119 @@
                 <span>No products in the cart.</span>
               </div>
             </div>
+
+            <div class="text-2xl ml-3 hidden max-lg:block font-light">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <!-- =========================== BANNER =========================== -->
-    <div class="h-[700px] relative mt-32">
+    <div class="h-[700px] max-md:h-96 relative mt-32 max-lg:mt-20">
       <div class="swiper mySwiper w-full h-full">
         <div class="swiper-wrapper">
-          <div class="swiper-slide relative">
-            <img src="./image/slder_2.jpg" alt="" class="h-[700px]" />
+          <div class="swiper-slide relative max-md:h-96">
+            <img
+              src="./image/slder_2.jpg"
+              alt=""
+              class="h-[700px] object-cover object-center w-full max-md:h-full"
+            />
             <div
-              class="text-white absolute top-1/3 left-36 -translate-y-1/3 w-[520px] h-auto animate-slideIn"
+              class="text-white absolute top-1/3 left-36 -translate-y-1/3 w-[520px] h-auto max-md:top-1/2 max-md:left-1/2 max-md:-translate-x-1/2 max-md:-translate-y-1/2 max-md:px-20"
             >
               <div
                 id="first"
-                class="font-bold text-[42px] leading-[50px] animate-fadeIn"
+                class="font-bold text-[42px] leading-[50px] max-lg:text-2xl max-md:flex max-md:text-center max-md:justify-center max-md:items-center max-md:text-lg"
               >
                 <h1>Best Education Wordpress</h1>
               </div>
-              <div id="second" class="text-lg mb-10 mt-5 animate-fadeIn">
+              <div
+                id="second"
+                class="text-lg mb-10 mt-5 max-md:flex max-md:text-center max-md:justify-center max-md:items-center"
+              >
                 Emply dummy text of the printing and typesetting industry orem
                 Ipsum has been the industry's standard dummy text ever
                 sinceprinting and typesetting industry.
               </div>
-              <a
-                id="third"
-                class="bg-yellow-500 text-black px-3 py-4 font-semibold cursor-pointer animate-fadeIn"
-                >START A COURSE</a
+              <div
+                class="max-md:flex max-md:justify-center max-md:items-center"
               >
+                <a
+                  id="third"
+                  class="bg-yellow-500 text-black px-3 py-4 font-semibold cursor-pointer"
+                  >START A COURSE</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="swiper-slide relative">
-            <img src="./image/slider-3.jpg" alt="" class="h-[700px]" />
+          <div class="swiper-slide relative max-md:h-96">
+            <img
+              src="./image/slider-3.jpg"
+              alt=""
+              class="h-[700px] object-cover object-center w-full max-md:h-full"
+            />
             <div
-              class="text-white absolute top-1/3 left-36 -translate-y-1/3 w-[520px] h-auto"
+              class="text-white absolute top-1/3 left-36 -translate-y-1/3 w-[520px] h-auto max-md:top-1/2 max-md:left-1/2 max-md:-translate-x-1/2 max-md:-translate-y-1/2 max-md:px-20"
             >
-              <div class="font-bold text-[42px] leading-[50px]">
+              <div
+                class="font-bold text-[42px] leading-[50px] max-lg:text-2xl max-md:flex max-md:text-center max-md:justify-center max-md:items-center max-md:text-lg"
+              >
                 <h1>Best Education Wordpress</h1>
                 <h1>Theme For 2018</h1>
               </div>
-              <p class="text-lg mb-10 mt-5">
+              <p
+                class="text-lg mb-10 mt-5 max-md:flex max-md:text-center max-md:justify-center max-md:items-center"
+              >
                 Emply dummy text of the printing and typesetting industry orem
                 Ipsum has been the industry's standard dummy text ever
                 sinceprinting and typesetting industry.
               </p>
-              <a
-                class="bg-yellow-500 text-black px-3 py-4 font-semibold cursor-pointer"
-                >START A COURSE</a
+              <div
+                class="max-md:flex max-md:justify-center max-md:items-center"
               >
+                <a
+                  id="third"
+                  class="bg-yellow-500 text-black px-3 py-4 font-semibold cursor-pointer"
+                  >START A COURSE</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="swiper-slide relative">
-            <img src="./image/slider23.jpg" alt="" class="h-[700px]" />
+          <div class="swiper-slide relative max-md:h-96">
+            <img
+              src="./image/slider23.jpg"
+              alt=""
+              class="h-[700px] object-cover object-center w-full max-md:h-full"
+            />
             <div
-              class="text-white absolute top-1/3 left-36 -translate-y-1/3 w-[520px] h-auto"
+              class="text-white absolute top-1/3 left-36 -translate-y-1/3 w-[520px] h-auto max-md:top-1/2 max-md:left-1/2 max-md:-translate-x-1/2 max-md:-translate-y-1/2 max-md:px-20"
             >
-              <div class="font-bold text-[42px] leading-[50px]">
+              <div
+                class="font-bold text-[42px] leading-[50px] max-lg:text-2xl max-md:flex max-md:text-center max-md:justify-center max-md:items-center max-md:text-lg"
+              >
                 <h1>Best Education Wordpress</h1>
                 <h1>Theme For 2018</h1>
               </div>
-              <p class="text-lg mb-10 mt-5">
+              <p
+                class="text-lg mb-10 mt-5 max-md:flex max-md:text-center max-md:justify-center max-md:items-center"
+              >
                 Emply dummy text of the printing and typesetting industry orem
                 Ipsum has been the industry's standard dummy text ever
                 sinceprinting and typesetting industry.
               </p>
-              <a
-                class="bg-yellow-500 text-black px-3 py-4 font-semibold cursor-pointer"
-                >START A COURSE</a
+              <div
+                class="max-md:flex max-md:justify-center max-md:items-center"
               >
+                <a
+                  id="third"
+                  class="bg-yellow-500 text-black px-3 py-4 font-semibold cursor-pointer"
+                  >START A COURSE</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -633,21 +696,23 @@
       </div>
 
       <div
-        class="max-w-[1410px] w-[97%] absolute bottom-0 left-1/2 -translate-x-1/2 z-30 bg-[#002147cc] bg-opacity-80"
+        class="w-[90%] absolute bottom-0 left-1/2 -translate-x-1/2 z-30 bg-[#002147cc] bg-opacity-80 max-lg:hidden"
       >
         <div class="grid grid-cols-3 text-white w-full">
           <div class="py-8 px-5 flex w-full group">
-            <div class="1">
-              <h1 class="text-2xl font-bold group-hover:text-[#fdc800]">
+            <div class="1 max-md:w-full max-md:text-[15px]">
+              <h1
+                class="text-2xl font-bold group-hover:text-[#fdc800] max-md:text-[22px]"
+              >
                 Scholarship Facility
               </h1>
-              <p class="mt-3">
+              <p class="mt-3 max-md:w-full">
                 Eimply dummy text printing ypese tting industry.
               </p>
             </div>
 
             <div
-              class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease"
+              class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease max-md:justify-end"
             >
               <i class="fas fa-graduation-cap text-[#fdc800] text-4xl"></i>
             </div>
@@ -656,35 +721,102 @@
           <div
             class="py-8 px-5 flex border-r border-l border-white border-opacity-40 w-full group"
           >
-            <div class="1">
-              <h1 class="text-2xl font-bold group-hover:text-[#fdc800]">
+            <div class="1 max-md:w-full max-md:text-[15px]">
+              <h1
+                class="text-2xl font-bold group-hover:text-[#fdc800] max-md:text-[22px]"
+              >
                 Skilled Lecturers
               </h1>
-              <p class="mt-3">
+              <p class="mt-3 max-md:w-full">
                 Eimply dummy text printing ypese tting industry.
               </p>
             </div>
             <div
-              class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease"
+              class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease max-md:justify-end"
             >
               <i class="fa-solid fa-user text-[#fdc800] text-4xl"></i>
             </div>
           </div>
 
           <div class="py-8 px-5 flex w-full group">
-            <div class="1">
-              <h1 class="text-2xl font-bold group-hover:text-[#fdc800]">
+            <div class="1 max-md:w-full max-md:text-[15px]">
+              <h1
+                class="text-2xl font-bold group-hover:text-[#fdc800] max-md:text-[22px]"
+              >
                 Book Library & Store
               </h1>
-              <p class="mt-3">
+              <p class="mt-3 max-md:w-full">
                 Eimply dummy text printing ypese tting industry.
               </p>
             </div>
             <div
-              class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease"
+              class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease max-md:justify-end"
             >
               <i class="fa fa-book text-[#fdc800] text-4xl"></i>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden max-lg:block px-14 max-sm:px-0">
+      <div
+        class="grid grid-cols-3 text-white w-full max-md:block bg-[#002147cc]"
+      >
+        <div class="py-8 px-5 flex w-full group max-md:border-b">
+          <div class="1 max-md:w-full max-md:text-[15px]">
+            <h1
+              class="text-2xl font-bold group-hover:text-[#fdc800] max-md:text-[22px]"
+            >
+              Scholarship Facility
+            </h1>
+            <p class="mt-3 max-md:w-full">
+              Eimply dummy text printing ypese tting industry.
+            </p>
+          </div>
+
+          <div
+            class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease max-md:justify-end"
+          >
+            <i class="fas fa-graduation-cap text-[#fdc800] text-4xl"></i>
+          </div>
+        </div>
+
+        <div
+          class="py-8 px-5 flex border-r border-l border-white border-opacity-40 w-full group max-md:border-b"
+        >
+          <div class="1 max-md:w-full max-md:text-[15px]">
+            <h1
+              class="text-2xl font-bold group-hover:text-[#fdc800] max-md:text-[22px]"
+            >
+              Skilled Lecturers
+            </h1>
+            <p class="mt-3 max-md:w-full">
+              Eimply dummy text printing ypese tting industry.
+            </p>
+          </div>
+          <div
+            class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease max-md:justify-end"
+          >
+            <i class="fa-solid fa-user text-[#fdc800] text-4xl"></i>
+          </div>
+        </div>
+
+        <div class="py-8 px-5 flex w-full group max-md:border-b">
+          <div class="1 max-md:w-full max-md:text-[15px]">
+            <h1
+              class="text-2xl font-bold group-hover:text-[#fdc800] max-md:text-[22px]"
+            >
+              Book Library & Store
+            </h1>
+            <p class="mt-3 max-md:w-full">
+              Eimply dummy text printing ypese tting industry.
+            </p>
+          </div>
+          <div
+            class="icon pl-7 flex items-center group-hover:transform group-hover:scale-125 transition-all duration-500 ease max-md:justify-end"
+          >
+            <i class="fa fa-book text-[#fdc800] text-4xl"></i>
           </div>
         </div>
       </div>
@@ -694,8 +826,8 @@
     <!-- =========================== BODY =========================== -->
     <main>
       <div class="br w-full h-full image-student">
-        <div class="max-w-[1410px] w-[97%] m-auto">
-          <div class="w-1/2 text-[15px] pt-[35px]">
+        <div class="px-14 w-full m-auto max-md:px-5">
+          <div class="w-1/2 text-[15px] pt-[35px] max-md:w-full">
             <h1 class="text-5xl font-semibold">Welcome To Our Campus</h1>
             <p class="font-semibold pt-5">
               Tmply dummy text of the printing and typesetting industry. Lorem
@@ -717,9 +849,13 @@
       </div>
 
       <div class="bg-[#f5f5f5]">
-        <div class="max-w-[1410px] m-auto w-[97%] pt-24 pb-24">
-          <div class="flex justify-between mb-11">
-            <h2 class="text-3xl font-semibold">Featured Courses</h2>
+        <div class="pt-24 pb-24">
+          <div
+            class="flex justify-between mb-11 max-sm:block max-md:px-5 px-14 m-auto w-full"
+          >
+            <h2 class="text-3xl font-semibold max-sm:w-full max-md:text-2xl">
+              Featured Courses
+            </h2>
             <div class="flex gap-2">
               <div
                 class="owl-prev bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
@@ -735,10 +871,12 @@
           </div>
 
           <div class="slider-container">
-            <div class="slider">
-              <div class="tonton flex gap-7 slides">
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
+            <div
+              class="slider-container px-14 m-auto w-full overflow-hidden max-sm:px-5"
+            >
+              <div class="flex gap-7 slides-card">
+                <div class="card1 w-[330px] bg-white shadow-md">
+                  <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                     >
@@ -791,8 +929,8 @@
                   </div>
                 </div>
 
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
+                <div class="card1 w-[330px] bg-white shadow-md">
+                  <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                     >
@@ -845,8 +983,8 @@
                   </div>
                 </div>
 
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
+                <div class="card1 w-[330px] bg-white shadow-md">
+                  <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                     >
@@ -899,8 +1037,8 @@
                   </div>
                 </div>
 
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
+                <div class="card1 w-[330px] bg-white shadow-md">
+                  <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                     >
@@ -952,219 +1090,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/13-410x260-sping.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$51.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Master Microservices with Spring Boot and Cloud
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/13-410x260-sping.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$51.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Master Microservices with Spring Boot and Cloud
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/13-410x260-sping.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$51.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Master Microservices with Spring Boot and Cloud
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card bg-white shadow-md overflow-hidden">
-                  <div class="relative group">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/13-410x260-sping.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$51.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Master Microservices with Spring Boot and Cloud
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -1191,9 +1116,11 @@
       </div>
 
       <div class="bg-white">
-        <div class="max-w-[1410px] m-auto w-[97%] pt-24 pb-24">
-          <div class="flex justify-between mb-11">
-            <h2 class="text-3xl font-semibold">Our Skilled Instructors</h2>
+        <div class="px-14 m-auto w-full pt-24 pb-24">
+          <div class="flex justify-between mb-11 max-sm:block max-md:px-0">
+            <h2 class="text-3xl font-semibold max-sm:w-full max-md:text-2xl">
+              Our Skilled Instructors
+            </h2>
             <div class="flex gap-2">
               <div
                 class="owl-prev bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
@@ -1209,7 +1136,7 @@
           </div>
 
           <div class="card-container">
-            <div class="">
+            <div class="px-14 w-full overflow-hidden max-sm:px-0">
               <div class="tonton flex gap-7">
                 <div class="card bg-white">
                   <div class="mb-4">
@@ -1290,6 +1217,46 @@
                     <p class="text-[#646464] pb-3">PHP Expert</p>
                   </div>
                 </div>
+
+                <div class="card bg-white">
+                  <div class="mb-4">
+                    <div class="relative overflow-hidden w-[332px] h-[332px]">
+                      <img
+                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                        alt=""
+                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
+                  >
+                    <h3 class="text-black text-2xl font-semibold">
+                      Daziy Millar
+                    </h3>
+                    <p class="text-[#646464] pb-3">PHP Expert</p>
+                  </div>
+                </div>
+
+                <div class="card bg-white">
+                  <div class="mb-4">
+                    <div class="relative overflow-hidden w-[332px] h-[332px]">
+                      <img
+                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                        alt=""
+                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
+                  >
+                    <h3 class="text-black text-2xl font-semibold">
+                      Daziy Millar
+                    </h3>
+                    <p class="text-[#646464] pb-3">PHP Expert</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1297,8 +1264,8 @@
       </div>
 
       <div class="bg-[#f5f5f5]">
-        <div class="max-w-[1410px] m-auto w-[97%] pt-24 pb-24">
-          <div class="grid grid-cols-2 gap-7">
+        <div class="px-14 m-auto w-full pt-24 pb-24 max-md:px-5">
+          <div class="grid grid-cols-2 gap-7 max-md:block">
             <div class="post">
               <div class="text-[28px] font-medium mb-11">
                 <h1>Latest Posts</h1>
@@ -1415,7 +1382,7 @@
                     </div>
                     <div class="w-[85%]">
                       <h1
-                        class="text-xl font-medium leading-5 mb-[10px] hover:text-yellow-500 cursor-pointer"
+                        class="text-xl font-medium leading-5 mb-[10px] hover:text-yellow-500 cursor-pointer flex-wrap"
                       >
                         SAT Implementation Workshops November 2026
                       </h1>
@@ -1485,9 +1452,9 @@
       </div>
 
       <div class="counter">
-        <div class="max-w-[1410px] m-auto w-[97%]">
-          <div class="grid grid-cols-4 px-14 py-14">
-            <div class="text-white">
+        <div class="px-14 m-auto w-full max-md:px-0">
+          <div class="grid grid-cols-4 px-14 py-14 max-md:block max-md:px-5">
+            <div class="text-white max-md:mb-10">
               <div class="uppercase flex">
                 <div
                   class="text-7xl mr-2 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-yellow-500 after:left-0 after:-bottom-5"
@@ -1499,7 +1466,7 @@
                 </p>
               </div>
             </div>
-            <div class="text-white">
+            <div class="text-white max-md:mb-10">
               <div class="uppercase flex">
                 <div
                   class="text-7xl mr-2 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-yellow-500 after:left-0 after:-bottom-5"
@@ -1511,7 +1478,7 @@
                 </p>
               </div>
             </div>
-            <div class="text-white">
+            <div class="text-white max-md:mb-10">
               <div class="uppercase flex">
                 <div
                   class="text-7xl mr-2 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-yellow-500 after:left-0 after:-bottom-5"
@@ -1523,7 +1490,7 @@
                 </p>
               </div>
             </div>
-            <div class="text-white">
+            <div class="text-white max-md:mb-10">
               <div class="uppercase flex">
                 <div
                   class="text-7xl mr-2 relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-yellow-500 after:left-0 after:-bottom-5"
@@ -1537,7 +1504,9 @@
         </div>
       </div>
 
-      <div class="bg-white max-w-[1410px] m-auto w-[97%] pb-[90px]">
+      <div
+        class="bg-white px-14 m-auto w-full pb-[90px] overflow-hidden max-md:px-5"
+      >
         <h1
           class="text-3xl font-normal flex text-center justify-center mt-16 mb-5"
         >
@@ -1545,7 +1514,7 @@
         </h1>
         <div class="container-layout mt-14">
           <div class="flex gap-7">
-            <div class="item">
+            <div class="item w-full">
               <div class="">
                 <h3 class="text-xl font-medium mb-1">David Fahim</h3>
                 <span class="text-[#646464]">Web Developer</span>
@@ -1567,7 +1536,7 @@
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item w-full">
               <div class="">
                 <h3 class="text-xl font-medium mb-1">David Fahim</h3>
                 <span class="text-[#646464]">Web Developer</span>
@@ -1594,17 +1563,19 @@
       </div>
 
       <div class="bg-yellow-500">
-        <div class="flex max-w-[1410px] m-auto w-[97%] py-14">
+        <div class="flex px-14 m-auto w-full py-14 max-lg:block">
           <div class=""><img src="./image/all-students.jpg" alt="" /></div>
           <div
-            class="bg-[#002147] text-white w-[300px] flex justify-center text-center items-center"
+            class="bg-[#002147] text-white w-[300px] flex justify-center text-center items-center max-lg:w-full"
           >
-            <div class="text-4xl font-normal">
-              <h2>Join 29,12,093 Students.</h2>
-              <div class="mt-8">
+            <div class="text-4xl font-normal max-lg:mt-5">
+              <h2 class="max-lg:text-3xl max-sm:text-xl">
+                Join 29,12,093 Students.
+              </h2>
+              <div class="mt-8 max-lg:pb-8">
                 <a
                   href="#"
-                  class="uppercase bg-yellow-500 text-sm font-medium text-black px-[40px] py-[13px]"
+                  class="uppercase bg-yellow-500 text-sm font-medium text-black px-[40px] py-[13px] max-sm:px-6 max-sm:py-2"
                   >JOIN NOW</a
                 >
               </div>
@@ -1613,9 +1584,11 @@
         </div>
       </div>
 
-      <div class="max-w-[1410px] m-auto w-[97%]">
+      <div class="px-14 w-full">
         <div class="py-16">
-          <div class="flex justify-center items-center gap-20">
+          <div
+            class="grid grid-cols-4 gap-20 w-full max-md:container max-md:overflow-y-auto max-md:flex"
+          >
             <img src="./image/2-1.jpg" alt="" />
             <img src="./image/3-1.jpg" alt="" />
             <img src="./image/4-1.jpg" alt="" />
@@ -1631,7 +1604,7 @@
       <div class="bg-[#002147]">
         <div class="pt-20 pb-[50px]">
           <div
-            class="max-w-[1140px] m-auto text-white grid grid-cols-4 pb-[80px]"
+            class="max-w-[1140px] m-auto text-white grid grid-cols-4 pb-[80px] max-md:block"
           >
             <div class="px-3">
               <h3
@@ -1880,8 +1853,14 @@
             </div>
           </div>
 
-          <div class="flex justify-between max-w-[1140px] m-auto mt-5">
-            <img src="./image/logo-light.png" alt="" />
+          <div
+            class="flex justify-between max-w-[1140px] m-auto mt-5 max-sm:block"
+          >
+            <div
+              class="max-sm:flex max-sm:items-center max-sm:justify-center max-sm:text-center"
+            >
+              <img src="./image/logo-light.png" alt="" class="" />
+            </div>
             <div class="text-[#909da4]">
               © Copyright Eikra 2020. Designed and Developed by RadiusTheme
             </div>
@@ -1893,6 +1872,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <!--  -->
 
     <!-- Initialize Swiper -->
     <script>
