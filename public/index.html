@@ -24,7 +24,7 @@
     <!-- =========================== HEADER =========================== -->
     <header class="z-50 w-full bg-white fixed top-0 contaider-header">
       <div class="bg-[#002147] header1 max-lg:hidden">
-        <div class="px-14 m-auto w-full items-center">
+        <div class="px-14 m-auto w-full items-center max-lg:px-5">
           <div class="pt-4 pb-4 li flex text-sm justify-between">
             <div class="text-gray-300">
               <ul class="flex font-semibold">
@@ -85,7 +85,7 @@
       </div>
 
       <div class="header2">
-        <div class="px-14 w-full flex items-center">
+        <div class="px-14 w-full flex items-center max-lg:px-5">
           <div class="flex items-center">
             <div class="mr-5"><img src="./image/logo-dark.png" alt="" /></div>
 
@@ -858,12 +858,12 @@
             </h2>
             <div class="flex gap-2">
               <div
-                class="owl-prev bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
+                class="prev bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
               >
                 <i class="fas fa-angle-left"></i>
               </div>
               <div
-                class="owl-next bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
+                class="next bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
               >
                 <i class="fas fa-angle-right"></i>
               </div>
@@ -872,10 +872,12 @@
 
           <div class="slider-container">
             <div
-              class="slider-container px-14 m-auto w-full overflow-hidden max-sm:px-5"
+              class="mx-14 max-sm:mx-5 overflow-hidden m-auto max-w-full slider formList transition duration-300 ease-in-out"
             >
-              <div class="flex gap-7 slides-card">
-                <div class="card1 w-[320px] bg-white shadow-md">
+              <div class="gap-[23px] flex w-max list snap-x snap-mandatory">
+                <div
+                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                >
                   <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
@@ -929,7 +931,9 @@
                   </div>
                 </div>
 
-                <div class="card1 w-[320px] bg-white shadow-md">
+                <div
+                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                >
                   <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
@@ -983,7 +987,9 @@
                   </div>
                 </div>
 
-                <div class="card1 w-[320px] bg-white shadow-md">
+                <div
+                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                >
                   <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
@@ -1037,7 +1043,9 @@
                   </div>
                 </div>
 
-                <div class="card1 w-[320px] bg-white shadow-md">
+                <div
+                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                >
                   <div class="relative group overflow-hidden">
                     <div
                       class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
@@ -1056,6 +1064,60 @@
                   <div class="p-5 border-b">
                     <h3 class="text-[#002147] text-lg font-semibold">
                       Master Microservices with Spring Boot and Cloud
+                    </h3>
+                    <p class="pt-2 text-[#222]">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem …
+                    </p>
+                  </div>
+                  <div class="flex justify-between px-5 py-3">
+                    <div class="flex justify-center items-center relative">
+                      <div class="w-10 mr-3">
+                        <img
+                          src="./image/user.jpg"
+                          alt=""
+                          class="rounded-full"
+                        />
+                      </div>
+                      <div class="text-[#f7d173]">
+                        <i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-2 ]">
+                      <i
+                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
+                      ></i>
+                      <span class="cursor-defaul">0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card1 w-[335px] bg-white shadow-md overflow-hidden">
+                  <div class="relative group overflow-hidden">
+                    <div
+                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
+                    >
+                      <img src="./image/15-410x260-web.jpg" alt="" class="" />
+                      <span
+                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
+                        >$93.000</span
+                      >
+                      <span
+                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
+                        ><i class="fas fa-link"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="p-5 border-b">
+                    <h3 class="text-[#002147] text-lg font-semibold">
+                      Build A Full Web Chat App From Scratch
                     </h3>
                     <p class="pt-2 text-[#222]">
                       Lorem Ipsum is simply dummy text of the printing and
@@ -1116,7 +1178,7 @@
       </div>
 
       <div class="bg-white">
-        <div class="px-14 m-auto w-full pt-24 pb-24">
+        <div class="px-14 m-auto w-full pt-24 pb-24 max-sm:px-5">
           <div class="flex justify-between mb-11 max-sm:block max-md:px-0">
             <h2 class="text-3xl font-semibold max-sm:w-full max-md:text-2xl">
               Our Skilled Instructors
@@ -1135,12 +1197,16 @@
             </div>
           </div>
 
-          <div class="card-container w-full overflow-hidden">
-            <div class="">
-              <div class="tonton flex gap-7">
-                <div class="card bg-white">
+          <div class="card-container w-full">
+            <div
+              class="max-sm:mx-5 overflow-hidden m-auto max-w-full slider formList2 transition duration-300 ease-in-out"
+            >
+              <div
+                class="gap-[23px] slider-container flex w-max list snap-x snap-mandatory"
+              >
+                <div class="card w-[335px] snap-start bg-white">
                   <div class="mb-4">
-                    <div class="relative overflow-hidden w-[320px] h-[330px]">
+                    <div class="relative overflow-hidden w-full h-[330px]">
                       <img
                         src="./image/c1886f3710b06e187044a39689872fae.jpeg"
                         alt=""
@@ -1158,11 +1224,11 @@
                   </div>
                 </div>
 
-                <div class="card bg-white">
+                <div class="card w-[335px] snap-start bg-white">
                   <div class="mb-4">
-                    <div class="relative overflow-hidden w-[320px] h-[330px]">
+                    <div class="relative overflow-hidden w-full h-[330px]">
                       <img
-                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                        src="./image/1f58ef405602c05780309f81f3133dfc.jpeg"
                         alt=""
                         class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
                       />
@@ -1178,11 +1244,11 @@
                   </div>
                 </div>
 
-                <div class="card bg-white">
+                <div class="card w-[335px] snap-start bg-white">
                   <div class="mb-4">
-                    <div class="relative overflow-hidden w-[320px] h-[330px]">
+                    <div class="relative overflow-hidden w-full h-[330px]">
                       <img
-                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                        src="./image/5c1b826d17206cfcbf53ac41f0dc8dc7.jpeg"
                         alt=""
                         class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
                       />
@@ -1198,11 +1264,11 @@
                   </div>
                 </div>
 
-                <div class="card bg-white">
+                <div class="card w-[335px] snap-start bg-white">
                   <div class="mb-4">
-                    <div class="relative overflow-hidden w-[320px] h-[330px]">
+                    <div class="relative overflow-hidden w-full h-[330px]">
                       <img
-                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                        src="./image/cd35d7ff8516eadf2078ad687f305ae1.jpeg"
                         alt=""
                         class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
                       />
@@ -1218,29 +1284,9 @@
                   </div>
                 </div>
 
-                <div class="card bg-white">
+                <div class="card w-[335px] snap-start bg-white">
                   <div class="mb-4">
-                    <div class="relative overflow-hidden w-[320px] h-[330px]">
-                      <img
-                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
-                        alt=""
-                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
-                  >
-                    <h3 class="text-black text-2xl font-semibold">
-                      Daziy Millar
-                    </h3>
-                    <p class="text-[#646464] pb-3">PHP Expert</p>
-                  </div>
-                </div>
-
-                <div class="card bg-white">
-                  <div class="mb-4">
-                    <div class="relative overflow-hidden w-[320px] h-[330px]">
+                    <div class="relative overflow-hidden w-full h-[330px]">
                       <img
                         src="./image/c1886f3710b06e187044a39689872fae.jpeg"
                         alt=""
@@ -1871,7 +1917,7 @@
     <!-- =========================== END FOOTER =========================== -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../public/js/index.js"></script>
     <!--  -->
 
     <!-- Initialize Swiper -->

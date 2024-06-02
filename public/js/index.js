@@ -16,3 +16,51 @@ window.addEventListener("scroll", function () {
     contaider_header.classList.remove("border-b-2", "border-black");
   }
 });
+
+//
+document.querySelector(".next").onclick = function () {
+  const widthItem = document.querySelector(".card1").offsetWidth;
+  const formList = document.querySelector(".formList");
+  if (formList.scrollLeft + formList.offsetWidth < formList.scrollWidth) {
+    formList.scrollLeft += widthItem;
+  } else {
+    formList.scrollLeft = 0; // Cuộn về đầu nếu đã đến cuối cùng
+  }
+};
+
+document.querySelector(".prev").onclick = function () {
+  const widthItem = document.querySelector(".card1").offsetWidth;
+  const formList = document.querySelector(".formList");
+  if (formList.scrollLeft > 0) {
+    formList.scrollLeft -= widthItem;
+  } else {
+    formList.scrollLeft = formList.scrollWidth - formList.offsetWidth; // Cuộn tới cuối cùng nếu đã ở đầu
+  }
+};
+//
+
+function moveNext() {
+  const widthItem = document.querySelector(".card").offsetWidth;
+  const formList = document.querySelector(".formList2");
+  if (formList.scrollLeft + formList.offsetWidth < formList.scrollWidth) {
+    formList.scrollLeft += widthItem;
+  } else {
+    formList.scrollLeft = 0; // Cuộn về đầu nếu đã đến cuối cùng
+  }
+}
+
+function movePrev() {
+  const widthItem = document.querySelector(".card").offsetWidth;
+  const formList = document.querySelector(".formList2");
+  if (formList.scrollLeft > 0) {
+    formList.scrollLeft -= widthItem;
+  } else {
+    formList.scrollLeft = formList.scrollWidth - formList.offsetWidth; // Cuộn tới cuối cùng nếu đã ở đầu
+  }
+}
+
+document.querySelector(".owl-next").onclick = moveNext;
+document.querySelector(".owl-prev").onclick = movePrev;
+
+// Tự động chuyển đổi mỗi 5 giây
+setInterval(moveNext, 5000);
