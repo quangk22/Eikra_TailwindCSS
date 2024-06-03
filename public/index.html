@@ -86,12 +86,10 @@
 
       <div class="header2">
         <div class="px-14 w-full flex items-center max-lg:px-5">
-          <div class="flex items-center">
+          <div class="flex items-center max-lg:relative">
             <div class="mr-5"><img src="./image/logo-dark.png" alt="" /></div>
 
-            <div
-              class="flex relative group group mr-2 max-[1350px]:hidden max-lg:hidden"
-            >
+            <div class="flex relative group group mr-2 max-[1350px]:hidden">
               <input
                 type="text"
                 placeholder="Search..."
@@ -155,24 +153,44 @@
             >
           </div>
 
-          <div class="flex justify-between items-center max-lg:hidden">
-            <div class="">
-              <ul class="flex gap-1">
+          <div
+            class="flex justify-between items-center max-lg:absolute max-lg:top-full max-lg:w-full max-lg:left-0"
+          >
+            <div
+              class="max-lg:w-full max-lg:border-t max-lg:hidden"
+              id="menu-mobi"
+            >
+              <ul
+                class="flex gap-1 max-lg:block max-lg:w-full max-lg:bg-white max-lg:gap-0 max-lg:max-h-[150px] max-lg:overflow-y-scroll max-lg:overflow-hidden scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+              >
+                <li class="py-2 px-2 hidden max-lg:block text-base">
+                  <div class="flex justify-between">
+                    <span
+                      class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
+                    >
+                      Category</span
+                    >
+
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </li>
+
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0"
+                  class="max-lg:py-2 max-lg:text-base group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 max-lg:after:hidden"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Home</span
                     >
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[440px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+                    class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[440px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100 max-lg:hidden"
                   >
                     <div class="flex gap-2">
                       <ul class="text-white cursor-pointer pl-1 w-full">
@@ -248,20 +266,21 @@
                 </li>
 
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                  class="group cursor-pointer max-lg:py-2 max-lg:text-base py-8 px-2 relative group after:content-[''] max-lg:after:hidden after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
                       >Pages</span
                     >
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[660px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+                    class="max-lg:hidden absolute z-40 left-[-179.975px] top-full invisible -translate-y-6 group-hover:translate-y-0 bg-[#002147] w-[660px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
                   >
                     <div class="flex gap-2">
                       <ul
@@ -333,20 +352,21 @@
                 </li>
 
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                  class="group cursor-pointer max-lg:py-2 max-lg:text-base py-8 px-2 relative group after:content-[''] max-lg:after:hidden after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
-                      >Element</span
-                    >
+                      >Elements
+                    </span>
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
+                    class="max-lg:hidden absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100 opacity-0 group-hover:opacity-100"
                   >
                     <div class="flex gap-2">
                       <ul class="text-white cursor-pointer w-full uppercase">
@@ -407,20 +427,21 @@
                 </li>
 
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                  class="group cursor-pointer max-lg:py-2 max-lg:text-base py-8 px-2 relative group after:content-[''] max-lg:after:hidden after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
-                      >Courses</span
-                    >
+                      >Courses
+                    </span>
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                    class="max-lg:hidden absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
                   >
                     <div class="flex gap-2">
                       <ul class="text-white cursor-pointer w-full uppercase">
@@ -447,20 +468,21 @@
                 </li>
 
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                  class="group cursor-pointer max-lg:py-2 max-lg:text-base py-8 px-2 relative group after:content-[''] max-lg:after:hidden after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
-                      >Reasearch</span
-                    >
+                      >Reasearch
+                    </span>
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                    class="max-lg:hidden absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
                   >
                     <div class="flex gap-2">
                       <ul class="text-white cursor-pointer w-full uppercase">
@@ -489,20 +511,21 @@
                 </li>
 
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                  class="group cursor-pointer max-lg:py-2 max-lg:text-base py-8 px-2 relative group after:content-[''] max-lg:after:hidden after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
-                      >News</span
-                    >
+                      >News
+                    </span>
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                    class="max-lg:hidden absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
                   >
                     <div class="flex gap-2">
                       <ul class="text-white cursor-pointer w-full uppercase">
@@ -526,20 +549,21 @@
                 </li>
 
                 <li
-                  class="group cursor-pointer py-8 px-2 relative group after:content-[''] after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
+                  class="group cursor-pointer max-lg:py-2 max-lg:text-base py-8 px-2 relative group after:content-[''] max-lg:after:hidden after:absolute after:w-full after:h-1 after:bg-yellow-500 after:bottom-0 after:left-0 after:scale-0 after:hover:scale-100 after:transition-all after:delay-100 after:duration-300 after:ease-in-out"
                 >
-                  <div class="">
+                  <div class="flex justify-between">
                     <span
                       class="mr-1 font-semibold group-hover:text-yellow-500 max-xl:text-xs"
-                      >Contact</span
-                    >
+                      >Contact
+                    </span>
                     <i
-                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500"
+                      class="fa-solid fa-chevron-down text-xs text-gray-400 mt-1 group-hover:text-yellow-500 max-lg:hidden"
                     ></i>
+                    <i class="fa-solid fa-plus hidden max-lg:block"></i>
                   </div>
 
                   <div
-                    class="absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
+                    class="max-lg:hidden absolute z-40 left-0 top-full invisible bg-[#002147] w-[210px] group-hover:visible transition-all duration-500 ease transform scale-y-0 group-hover:scale-y-100"
                   >
                     <div class="flex gap-2">
                       <ul class="text-white cursor-pointer w-full uppercase">
@@ -558,8 +582,21 @@
           </div>
 
           <div class="ml-auto flex justify-center items-center text-center">
-            <div class="text-2xl mr-3 hidden max-lg:block font-light">
-              <i class="fa-solid fa-magnifying-glass"></i>
+            <div
+              class="text-2xl mr-3 hidden max-[1350px]:block font-light relative py-7 px-2"
+              id="search"
+            >
+              <div class=""><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div
+                class="absolute z-50 right-0 top-full hidden"
+                id="input-search"
+              >
+                <input
+                  type="search"
+                  placeholder="Search Here..."
+                  class="w-[220px] border-yellow-400 bg-[#f5f5f5] text-[#666666] h-[40px] text-xl pl-5"
+                />
+              </div>
             </div>
 
             <div class="relative py-7 px-2 group">
@@ -576,7 +613,10 @@
               </div>
             </div>
 
-            <div class="text-2xl ml-3 hidden max-lg:block font-light">
+            <div
+              class="text-2xl ml-3 hidden max-lg:block font-light"
+              id="btn-menu"
+            >
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
@@ -848,309 +888,289 @@
         </div>
       </div>
 
-      <div class="bg-[#f5f5f5]">
-        <div class="pt-24 pb-24">
-          <div
-            class="flex justify-between mb-11 max-sm:block max-md:px-5 px-14 m-auto w-full"
+      <div class="slider-container pt-24 pb-24 bg-[#f5f5f5]">
+        <div
+          class="flex gap-2 justify-end mb-11 max-sm:block max-md:px-5 px-14 m-auto w-full"
+        >
+          <h2
+            class="text-3xl font-semibold max-sm:w-full max-md:text-2xl w-[100%] text-start"
           >
-            <h2 class="text-3xl font-semibold max-sm:w-full max-md:text-2xl">
-              Featured Courses
-            </h2>
-            <div class="flex gap-2">
-              <div
-                class="prev bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
-              >
-                <i class="fas fa-angle-left"></i>
-              </div>
-              <div
-                class="next bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
-              >
-                <i class="fas fa-angle-right"></i>
-              </div>
+            Featured Courses
+          </h2>
+          <div class="flex gap-5 max-sm:mt-5">
+            <div
+              class="swiper-button-prev_post bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
+            >
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div
+              class="swiper-button-next_post bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
+            >
+              <i class="fas fa-angle-right"></i>
             </div>
           </div>
+        </div>
 
-          <div class="slider-container">
+        <div
+          class="swiper slider_post mx-14 max-sm:mx-5 overflow-hidden m-auto max-w-full slider formList transition duration-300 ease-in-out"
+        >
+          <div class="swiper-wrapper flex w-max list snap-x snap-mandatory">
             <div
-              class="mx-14 max-sm:mx-5 overflow-hidden m-auto max-w-full slider formList transition duration-300 ease-in-out"
+              class="card1 swiper-slide snap-start bg-white shadow-md overflow-hidden"
             >
-              <div class="gap-[23px] flex w-max list snap-x snap-mandatory">
+              <div class="relative group overflow-hidden">
                 <div
-                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                  class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                 >
-                  <div class="relative group overflow-hidden">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/4-410x260.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >Free</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
+                  <img src="./image/4-410x260.jpg" alt="" class="w-[100%]" />
+                  <span
+                    class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
+                    >Free</span
+                  >
+                  <span
+                    class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
+                    ><i class="fas fa-link"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="p-5 border-b">
+                <h3 class="text-[#002147] text-lg font-semibold">
+                  Learn PHP Programming From Scratch
+                </h3>
+                <p class="pt-2 text-[#222]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem …
+                </p>
+              </div>
+              <div class="flex justify-between px-5 py-3">
+                <div class="flex justify-center items-center relative">
+                  <div class="w-10 mr-3">
+                    <img src="./image/user.jpg" alt="" class="rounded-full" />
                   </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Learn PHP Programming From Scratch
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">28</span>
-                    </div>
+                  <div class="text-[#f7d173]">
+                    <i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
                   </div>
                 </div>
+                <div class="flex justify-center items-center gap-2 ]">
+                  <i
+                    class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
+                  ></i>
+                  <i class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"></i>
+                  <span class="cursor-defaul">28</span>
+                </div>
+              </div>
+            </div>
 
+            <div
+              class="card1 swiper-slide snap-start bg-white shadow-md overflow-hidden"
+            >
+              <div class="relative group overflow-hidden">
                 <div
-                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                  class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                 >
-                  <div class="relative group overflow-hidden">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/6-410x260-pt.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$25.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
+                  <img src="./image/6-410x260-pt.jpg" alt="" class="w-[100%]" />
+                  <span
+                    class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
+                    >$25.000</span
+                  >
+                  <span
+                    class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
+                    ><i class="fas fa-link"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="p-5 border-b">
+                <h3 class="text-[#002147] text-lg font-semibold">
+                  Learning Python for Data Analysis and Visualization
+                </h3>
+                <p class="pt-2 text-[#222]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem …
+                </p>
+              </div>
+              <div class="flex justify-between px-5 py-3">
+                <div class="flex justify-center items-center relative">
+                  <div class="w-10 mr-3">
+                    <img src="./image/user.jpg" alt="" class="rounded-full" />
                   </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Learning Python for Data Analysis and Visualization
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
+                  <div class="text-[#f7d173]">
+                    <i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
                   </div>
                 </div>
+                <div class="flex justify-center items-center gap-2 ]">
+                  <i
+                    class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
+                  ></i>
+                  <i class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"></i>
+                  <span class="cursor-defaul">0</span>
+                </div>
+              </div>
+            </div>
 
+            <div
+              class="card1 swiper-slide snap-start bg-white shadow-md overflow-hidden"
+            >
+              <div class="relative group overflow-hidden">
                 <div
-                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                  class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                 >
-                  <div class="relative group overflow-hidden">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/15-410x260-web.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$93.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
+                  <img
+                    src="./image/15-410x260-web.jpg"
+                    alt=""
+                    class="w-[100%]"
+                  />
+                  <span
+                    class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
+                    >$93.000</span
+                  >
+                  <span
+                    class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
+                    ><i class="fas fa-link"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="p-5 border-b">
+                <h3 class="text-[#002147] text-lg font-semibold">
+                  Build A Full Web Chat App From Scratch
+                </h3>
+                <p class="pt-2 text-[#222]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem …
+                </p>
+              </div>
+              <div class="flex justify-between px-5 py-3">
+                <div class="flex justify-center items-center relative">
+                  <div class="w-10 mr-3">
+                    <img src="./image/user.jpg" alt="" class="rounded-full" />
                   </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Build A Full Web Chat App From Scratch
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
+                  <div class="text-[#f7d173]">
+                    <i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
                   </div>
                 </div>
+                <div class="flex justify-center items-center gap-2 ]">
+                  <i
+                    class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
+                  ></i>
+                  <i class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"></i>
+                  <span class="cursor-defaul">0</span>
+                </div>
+              </div>
+            </div>
 
+            <div
+              class="card1 swiper-slide snap-start bg-white shadow-md overflow-hidden"
+            >
+              <div class="relative group overflow-hidden">
                 <div
-                  class="card1 w-[335px] snap-start bg-white shadow-md overflow-hidden"
+                  class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
                 >
-                  <div class="relative group overflow-hidden">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/13-410x260-sping.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$51.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
+                  <img
+                    src="./image/13-410x260-sping.jpg"
+                    alt=""
+                    class="w-[100%]"
+                  />
+                  <span
+                    class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
+                    >$51.000</span
+                  >
+                  <span
+                    class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
+                    ><i class="fas fa-link"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="p-5 border-b">
+                <h3 class="text-[#002147] text-lg font-semibold">
+                  Master Microservices with Spring Boot and Cloud
+                </h3>
+                <p class="pt-2 text-[#222]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem …
+                </p>
+              </div>
+              <div class="flex justify-between px-5 py-3">
+                <div class="flex justify-center items-center relative">
+                  <div class="w-10 mr-3">
+                    <img src="./image/user.jpg" alt="" class="rounded-full" />
                   </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Master Microservices with Spring Boot and Cloud
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
-                  </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
+                  <div class="text-[#f7d173]">
+                    <i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
                   </div>
                 </div>
+                <div class="flex justify-center items-center gap-2 ]">
+                  <i
+                    class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
+                  ></i>
+                  <i class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"></i>
+                  <span class="cursor-defaul">0</span>
+                </div>
+              </div>
+            </div>
 
-                <div class="card1 w-[335px] bg-white shadow-md overflow-hidden">
-                  <div class="relative group overflow-hidden">
-                    <div
-                      class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
-                    >
-                      <img src="./image/15-410x260-web.jpg" alt="" class="" />
-                      <span
-                        class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
-                        >$93.000</span
-                      >
-                      <span
-                        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
-                        ><i class="fas fa-link"></i
-                      ></span>
-                    </div>
+            <div class="card1 swiper-slide bg-white shadow-md overflow-hidden">
+              <div class="relative group overflow-hidden">
+                <div
+                  class="before:content-[''] before:w-full before:h-full before:bg-[#002147cc] bg-opacity-40 before:bg-opacity-30 before:absolute before:top-0 before:-translate-x-96 before:invisible hover:before:visible hover:before:translate-x-0 before:transition-all before:delay-100 before:duration-500 before:ease-in-out"
+                >
+                  <img
+                    src="./image/15-410x260-web.jpg"
+                    alt=""
+                    class="w-[100%]"
+                  />
+                  <span
+                    class="text-white font-black bg-yellow-400 absolute top-3 right-3 px-2 py-1 rounded z-20"
+                    >$93.000</span
+                  >
+                  <span
+                    class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-yellow-500 border-2 p-5 items-center flex justify-center rounded-full text-white font-black invisible group-hover:visible transition delay-150 duration-500 ease-in-out"
+                    ><i class="fas fa-link"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="p-5 border-b">
+                <h3 class="text-[#002147] text-lg font-semibold">
+                  Build A Full Web Chat App From Scratch
+                </h3>
+                <p class="pt-2 text-[#222]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem …
+                </p>
+              </div>
+              <div class="flex justify-between px-5 py-3">
+                <div class="flex justify-center items-center relative">
+                  <div class="w-10 mr-3">
+                    <img src="./image/user.jpg" alt="" class="rounded-full" />
                   </div>
-                  <div class="p-5 border-b">
-                    <h3 class="text-[#002147] text-lg font-semibold">
-                      Build A Full Web Chat App From Scratch
-                    </h3>
-                    <p class="pt-2 text-[#222]">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem …
-                    </p>
+                  <div class="text-[#f7d173]">
+                    <i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
                   </div>
-                  <div class="flex justify-between px-5 py-3">
-                    <div class="flex justify-center items-center relative">
-                      <div class="w-10 mr-3">
-                        <img
-                          src="./image/user.jpg"
-                          alt=""
-                          class="rounded-full"
-                        />
-                      </div>
-                      <div class="text-[#f7d173]">
-                        <i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i
-                        ><i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-2 ]">
-                      <i
-                        class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"
-                      ></i>
-                      <span class="cursor-defaul">0</span>
-                    </div>
-                  </div>
+                </div>
+                <div class="flex justify-center items-center gap-2 ]">
+                  <i
+                    class="fa-solid fa-heart text-[#a4a4a4] cursor-pointer"
+                  ></i>
+                  <i class="fa-solid fa-users text-[#a4a4a4] cursor-defaul"></i>
+                  <span class="cursor-defaul">0</span>
                 </div>
               </div>
             </div>
@@ -1177,132 +1197,120 @@
         </div>
       </div>
 
-      <div class="bg-white">
-        <div class="px-14 m-auto w-full pt-24 pb-24 max-sm:px-5">
-          <div class="flex justify-between mb-11 max-sm:block max-md:px-0">
-            <h2 class="text-3xl font-semibold max-sm:w-full max-md:text-2xl">
-              Our Skilled Instructors
-            </h2>
-            <div class="flex gap-2">
-              <div
-                class="owl-prev bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
-              >
-                <i class="fas fa-angle-left"></i>
-              </div>
-              <div
-                class="owl-next bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
-              >
-                <i class="fas fa-angle-right"></i>
-              </div>
+      <div class="slider-container pt-24 pb-24 bg-[#f5f5f5]">
+        <div
+          class="flex gap-2 justify-end mb-11 max-sm:block max-md:px-5 px-14 m-auto w-full"
+        >
+          <h2
+            class="text-3xl font-semibold max-sm:w-full max-md:text-2xl w-[100%] text-start"
+          >
+            Featured Courses
+          </h2>
+          <div class="flex gap-5 max-sm:mt-5">
+            <div
+              class="swiper-button-prev_post bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
+            >
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div
+              class="swiper-button-next_post bg-[#fdc800] w-7 h-7 text-center flex justify-center items-center font-extrabold text-white hover:bg-black"
+            >
+              <i class="fas fa-angle-right"></i>
             </div>
           </div>
+        </div>
 
-          <div class="card-container w-full">
-            <div
-              class="max-sm:mx-5 overflow-hidden m-auto max-w-full slider formList2 transition duration-300 ease-in-out"
-            >
+        <div
+          class="swiper slider_post mx-14 max-sm:mx-5 overflow-hidden m-auto max-w-full slider formList transition duration-300 ease-in-out"
+        >
+          <div class="swiper-wrapper flex w-max list snap-x snap-mandatory">
+            <div class="card swiper-slide w-[335px] snap-start bg-none">
+              <div class="mb-4">
+                <div class="relative overflow-hidden w-full h-[330px]">
+                  <img
+                    src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                    alt=""
+                    class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                  />
+                </div>
+              </div>
               <div
-                class="gap-[23px] slider-container flex w-max list snap-x snap-mandatory"
+                class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
               >
-                <div class="card w-[335px] snap-start bg-white">
-                  <div class="mb-4">
-                    <div class="relative overflow-hidden w-full h-[330px]">
-                      <img
-                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
-                        alt=""
-                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
-                  >
-                    <h3 class="text-black text-2xl font-semibold">
-                      Daziy Millar
-                    </h3>
-                    <p class="text-[#646464] pb-3">PHP Expert</p>
-                  </div>
-                </div>
+                <h3 class="text-black text-2xl font-semibold">Daziy Millar</h3>
+                <p class="text-[#646464] pb-3">PHP Expert</p>
+              </div>
+            </div>
 
-                <div class="card w-[335px] snap-start bg-white">
-                  <div class="mb-4">
-                    <div class="relative overflow-hidden w-full h-[330px]">
-                      <img
-                        src="./image/1f58ef405602c05780309f81f3133dfc.jpeg"
-                        alt=""
-                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
-                  >
-                    <h3 class="text-black text-2xl font-semibold">
-                      Daziy Millar
-                    </h3>
-                    <p class="text-[#646464] pb-3">PHP Expert</p>
-                  </div>
+            <div class="card swiper-slide w-[335px] snap-start bg-none">
+              <div class="mb-4">
+                <div class="relative overflow-hidden w-full h-[330px]">
+                  <img
+                    src="./image/1f58ef405602c05780309f81f3133dfc.jpeg"
+                    alt=""
+                    class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                  />
                 </div>
+              </div>
+              <div
+                class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
+              >
+                <h3 class="text-black text-2xl font-semibold">Daziy Millar</h3>
+                <p class="text-[#646464] pb-3">PHP Expert</p>
+              </div>
+            </div>
 
-                <div class="card w-[335px] snap-start bg-white">
-                  <div class="mb-4">
-                    <div class="relative overflow-hidden w-full h-[330px]">
-                      <img
-                        src="./image/5c1b826d17206cfcbf53ac41f0dc8dc7.jpeg"
-                        alt=""
-                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
-                  >
-                    <h3 class="text-black text-2xl font-semibold">
-                      Daziy Millar
-                    </h3>
-                    <p class="text-[#646464] pb-3">PHP Expert</p>
-                  </div>
+            <div class="card swiper-slide w-[335px] snap-start bg-none">
+              <div class="mb-4">
+                <div class="relative overflow-hidden w-full h-[330px]">
+                  <img
+                    src="./image/5c1b826d17206cfcbf53ac41f0dc8dc7.jpeg"
+                    alt=""
+                    class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                  />
                 </div>
+              </div>
+              <div
+                class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
+              >
+                <h3 class="text-black text-2xl font-semibold">Daziy Millar</h3>
+                <p class="text-[#646464] pb-3">PHP Expert</p>
+              </div>
+            </div>
 
-                <div class="card w-[335px] snap-start bg-white">
-                  <div class="mb-4">
-                    <div class="relative overflow-hidden w-full h-[330px]">
-                      <img
-                        src="./image/cd35d7ff8516eadf2078ad687f305ae1.jpeg"
-                        alt=""
-                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
-                  >
-                    <h3 class="text-black text-2xl font-semibold">
-                      Daziy Millar
-                    </h3>
-                    <p class="text-[#646464] pb-3">PHP Expert</p>
-                  </div>
+            <div class="card swiper-slide w-[335px] snap-start bg-none">
+              <div class="mb-4">
+                <div class="relative overflow-hidden w-full h-[330px]">
+                  <img
+                    src="./image/cd35d7ff8516eadf2078ad687f305ae1.jpeg"
+                    alt=""
+                    class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                  />
                 </div>
+              </div>
+              <div
+                class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
+              >
+                <h3 class="text-black text-2xl font-semibold">Daziy Millar</h3>
+                <p class="text-[#646464] pb-3">PHP Expert</p>
+              </div>
+            </div>
 
-                <div class="card w-[335px] snap-start bg-white">
-                  <div class="mb-4">
-                    <div class="relative overflow-hidden w-full h-[330px]">
-                      <img
-                        src="./image/c1886f3710b06e187044a39689872fae.jpeg"
-                        alt=""
-                        class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
-                  >
-                    <h3 class="text-black text-2xl font-semibold">
-                      Daziy Millar
-                    </h3>
-                    <p class="text-[#646464] pb-3">PHP Expert</p>
-                  </div>
+            <div class="card swiper-slide w-[335px] snap-start bg-none">
+              <div class="mb-4">
+                <div class="relative overflow-hidden w-full h-[330px]">
+                  <img
+                    src="./image/c1886f3710b06e187044a39689872fae.jpeg"
+                    alt=""
+                    class="w-full h-full transform-gpu hover:scale-150 transition-all delay-200 duration-500 ease-in-out"
+                  />
                 </div>
+              </div>
+              <div
+                class="before:content-[''] before:w-[50px] before:h-[4px] before:bg-[#fdc800] before:absolute before:bottom-0 relative"
+              >
+                <h3 class="text-black text-2xl font-semibold">Daziy Millar</h3>
+                <p class="text-[#646464] pb-3">PHP Expert</p>
               </div>
             </div>
           </div>
@@ -1558,9 +1566,9 @@
         >
           What Our Students Say
         </h1>
-        <div class="container-layout mt-14">
-          <div class="flex gap-7">
-            <div class="item w-full">
+        <div class="container-layout mt-14 swiper mySwiper3 w-full">
+          <div class="gap-3 swiper-wrapper w-max list snap-x snap-mandatory">
+            <div class="item swiper-slide">
               <div class="">
                 <h3 class="text-xl font-medium mb-1">David Fahim</h3>
                 <span class="text-[#646464]">Web Developer</span>
@@ -1582,7 +1590,51 @@
                 </div>
               </div>
             </div>
-            <div class="item w-full">
+            <div class="item swiper-slide">
+              <div class="">
+                <h3 class="text-xl font-medium mb-1">David Fahim</h3>
+                <span class="text-[#646464]">Web Developer</span>
+
+                <div class="relative">
+                  <div
+                    class="mt-10 text-sm font-normal text-[#646464] leading-6 bg-[#f8f8f8] pt-[30px] pb-[30px] pl-[30px] pr-[130px]"
+                  >
+                    Excellent content and assignments that build on your
+                    knowledge, reinforce, and then expand. I recently secured
+                    new employment using PHP and couldn't have done so without
+                    the Professional Web Development courses.
+                  </div>
+                  <div
+                    class="image p-3 bg-white absolute z-20 right-4 -top-[45px]"
+                  >
+                    <img src="./image/user8-92x92.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="">
+                <h3 class="text-xl font-medium mb-1">David Fahim</h3>
+                <span class="text-[#646464]">Web Developer</span>
+
+                <div class="relative">
+                  <div
+                    class="mt-10 text-sm font-normal text-[#646464] leading-6 bg-[#f8f8f8] pt-[30px] pb-[30px] pl-[30px] pr-[130px]"
+                  >
+                    Excellent content and assignments that build on your
+                    knowledge, reinforce, and then expand. I recently secured
+                    new employment using PHP and couldn't have done so without
+                    the Professional Web Development courses.
+                  </div>
+                  <div
+                    class="image p-3 bg-white absolute z-20 right-4 -top-[45px]"
+                  >
+                    <img src="./image/user8-92x92.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
               <div class="">
                 <h3 class="text-xl font-medium mb-1">David Fahim</h3>
                 <span class="text-[#646464]">Web Developer</span>
@@ -1907,7 +1959,9 @@
             >
               <img src="./image/logo-light.png" alt="" class="" />
             </div>
-            <div class="text-[#909da4]">
+            <div
+              class="text-[#909da4] px-5 max-sm:mt-5 max-sm:flex max-sm:items-center max-sm:justify-center max-sm:text-center"
+            >
               © Copyright Eikra 2020. Designed and Developed by RadiusTheme
             </div>
           </div>
@@ -1937,6 +1991,97 @@
         autoplay: {
           delay: 5000, // Độ trễ giữa các lần chuyển slide, tính bằng mili giây
           disableOnInteraction: false, // Tắt tự động chuyển slide khi người dùng tương tác với swiper
+        },
+      });
+
+      var swiper1 = new Swiper(".slider_post", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next_post",
+          prevEl: ".swiper-button-prev_post",
+        },
+        pagination: {
+          el: ".swiper-pagination_sale",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          950: {
+            slidesPerView: 3,
+            spaceBetween: 23,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 23,
+          },
+        },
+      });
+
+      var swiper2 = new Swiper(".slider_post2", {
+        slidesPerView: 1,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next_post2",
+          prevEl: ".swiper-button-prev_post2",
+        },
+        pagination: {
+          el: ".swiper-pagination_sale",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 23,
+          },
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      var swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          869: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next3",
+          prevEl: ".swiper-button-prev3",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>
